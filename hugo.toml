@@ -1,11 +1,24 @@
-baseURL = "https://is-this-echo.github.io/insights-blog"					# Site's URL
-title = "My insights"								# Site's Name
+baseURL = "/"					# Site's URL
+title = "My Insights"								                        # Site's Name
 theme = "manis"
-copyright = "&copy; 2017 <a href='https://dcfd.com'> Debjyoti Ghosh </a>" # Copyright notice. Note: You can use HTML tag here
+relativeURLs = true
+
+copyright = "&copy; 2022 <a href='https://dcfd.com'> Debjyoti Ghosh </a>" # Copyright notice. Note: You can use HTML tag here
+
 pluralizeListTitles = false
-paginate = 7								# Minimum number of item before paginate navigation show up
+paginate = 10								# Minimum number of item before paginate navigation show up
 canonifyURL = true
-disqusShortname = ""                        # Your disqus shortname
+
+disqusShortname = "optiongodecho"                        # Your disqus shortname
+
+[menu]
+	[[menu.main]]
+		name = "Insights"
+		url = "/insights/"
+
+	[[menu.main]]
+		name = "About"
+		url = "/about"
 
 [taxonomies]
 	tag = "tags"
@@ -13,7 +26,8 @@ disqusShortname = ""                        # Your disqus shortname
 
 [params]
 	debugCSS = false                        # If false, use minified CSS (ui.min.css)
-	disqusSections = ["blog"]               # list of section support disqus comments
+	disqusSections = ["insights", "about"]               # list of section support disqus comments
+
 	# Site meta description
 	description = "A blog about readings in systems in Computer Science."
 	tagline = "Summaries of academic papers and blog posts about systems"   # Site's Tagline (Subtitle or Keyword)
@@ -24,7 +38,7 @@ disqusShortname = ""                        # Your disqus shortname
 	head404 = "Sorry, I can't find what you want."
 	sub404 = "Back to <a href='/'>Home</a>."
 
-	colorTheme = "#ca4969"                  # Color of your website
+	colorTheme = "#71b7be"                  # Color of your website
 	latestCount = 10                        # Maximum number of item in Latest Posts or Works
 	faviconImg = "favicon.ico"             # Path to site's favicon image
 	dateFmt = "02 Jan 2006"                # Date format in item list
